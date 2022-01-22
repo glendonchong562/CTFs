@@ -1,7 +1,8 @@
 # Let's Walk Together (50 Points)
 
 We are provided with a png file called **interesting_waves.png**
-![interesting_waves](https://user-images.githubusercontent.com/71312079/150639112-c7d93f22-3714-4194-8769-578e9617a347.png)
+
+![2022-01-22 20_58_44-interesting_waves_resized](https://user-images.githubusercontent.com/71312079/150639528-ba32c00d-a01b-4752-8e5f-1a74be9cd1cf.png)
 
 We examine the png with *exiftool* and note that the png contains trailing data
 
