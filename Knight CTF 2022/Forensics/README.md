@@ -28,7 +28,7 @@ FLAG: KCTF{BiNw4lk_is_h3lpfUl}
 
 ---
 
-# Unknown File
+# Unknown File (50 Points)
 
 The file of interest was called **unknown.file**
 The following commands were then run on the file:
