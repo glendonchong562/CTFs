@@ -9,9 +9,13 @@ Running it shows that the file merely tells us if the inputed flag is the correc
 I originally decompiled the code in ghidra, but the decompiled view was more difficult to read as compared to the view from IDA. I think it's because unlike IDA, ghidra has no concept of the array data structure hence the more confusing decompiled code.
 
 Ghidra:
+
+
 ![ghidra_smaller](https://user-images.githubusercontent.com/71312079/150683412-3b4788ba-b1c0-40bf-90f1-629f7188e29e.png)
 
 IDA:
+
+
 ![ida_disassembled](https://user-images.githubusercontent.com/71312079/150684030-3ec9721c-6071-4ee5-86cd-4ba72084ef4a.png)
 
 
