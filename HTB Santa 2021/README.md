@@ -2,7 +2,7 @@
 
 * Jeopardy style beginner friendly CTF with 5 challenges released daily 
   * Difficuly was progressively ramped up eith each day
-* Very enjoyable as I was able to gain exporuse to my weaker CTF categories (**Pwning & Reversing**) and solve Day 1 & 2's challenges within the same day  
+* Very enjoyable as I was able to gain exposure to my weaker CTF categories (**Pwning & Reversing**) and solve Day 1 & 2's challenges within the same day  
 * The forensics category was the easiest for me, as it was very related to what I do in DFIR
   * Exception was the last day's challenge (**Ho Ho Ho**) when we only had ~3 hours to solve and I did not recognise the Ethereum address 
 * Learning Points:
