@@ -5,6 +5,7 @@ This challenge provided us with 2 files:
 2.  **flag.txt** [Fake flag used for testing]
 
 I first checked the security protections of **sleigh**:
+
 ![checksec](https://user-images.githubusercontent.com/71312079/151155488-c33bce48-9f07-4988-9852-229e6ca33628.png)
 
 Hmm... unlike day 1's challenge we now have PIE enabled but NX is disabled, leading me to 2 observations:
@@ -33,7 +34,8 @@ From all the findings above, I now devise a strategy to obtain the flag:
    * I used the same method as day 1's challenge [Mr Snowy](../Mr%20Snowy/README.md), which also happens to be the same value of **72**.
 2. Insert the provided base address so that the function returns to the top of the stack 
 3. Place the shellcode somewhere in the buffer so that it will be executed next after the step *2*
-4. Use a *nop sled* to ensure that the shellcode even if the return address is not exact
+   * Shellcode taken from this [writeup](https://ctftime.org/writeup/20861) of a similar CTF challenge
+5. Use a *nop sled* to ensure that the shellcode even if the return address is not exact
     * Length of nop sled = Offset [72] - length of shellcode [34] = **38**
 
 I then crafted the following python script:
