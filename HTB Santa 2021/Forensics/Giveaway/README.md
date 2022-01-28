@@ -4,7 +4,7 @@ We are given a zipped file containing a macro-enabled word document **chritmas_g
 
 ![giveaway olevba output](https://user-images.githubusercontent.com/71312079/151481284-4d9b9fc3-a23d-45fd-8221-6c9cab820415.png)
 
-Hmm... looks highly suspicious. Let's take a further look into the actual functions. Scrolling through the function, I see there is a following:
+Hmm... looks highly suspicious. Let's take a further look into the actual functions. Scrolling through the function, I see the following:
 
 1. OS enumeration
 ![enumeration](https://user-images.githubusercontent.com/71312079/151481278-c2ddabcd-49b6-4931-b1a5-429c1650a3d6.png)
