@@ -4,7 +4,7 @@ We are given a PCAP file called **christmaswishlist.pcap**. Opening the pcap in 
 
 ![protocol_hierachy](https://user-images.githubusercontent.com/71312079/151584332-28f2fd03-09cc-40bc-8fd5-d5d5c06a1cbd.png)
 
-Following the TCP streams, I note that presence of a web shell on a server, allowing the client to execute arbitary commands on the server. Here we see that the password hashes have been succesfuly retrieved from the server through the command *cat /etc/passwd*.
+Following the TCP streams, I note the presence of a web shell on a server, allowing the client to execute arbitary commands on the server. Here we see that the password hashes have been succesfuly retrieved from the server through the command *cat /etc/passwd*.
 
 Request:
 ![getpasswd](https://user-images.githubusercontent.com/71312079/151584350-93aa1cf1-d2a4-45db-8ec7-b971bf1f07e7.png)
