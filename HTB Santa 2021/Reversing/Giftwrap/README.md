@@ -1,4 +1,4 @@
-# Common Mistake (Day 2)
+# Giftwrap (Day 2)
 
 We are given a single file called **giftwrap**
 
