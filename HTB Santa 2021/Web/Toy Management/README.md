@@ -44,6 +44,8 @@ Password: Any value
 
 Using either one of the aforementioned usernames would authenticate me and I can then see the flag.
 
+![flag](https://user-images.githubusercontent.com/71312079/151479732-6167cf5c-8b08-425d-917a-1184a8ade58a.jpg)
+
 Flag: `HTB{1nj3cti0n_1s_in3v1t4bl3}`
 
 
