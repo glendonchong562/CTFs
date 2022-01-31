@@ -85,4 +85,28 @@ f.close()
 
 Running the code above and opening **original.pdf** reveals the flag.
 
-Flag: HTB{4ff1n3_c1ph3r_15_51mpl3_m47h5}
+Flag: `HTB{4ff1n3_c1ph3r_15_51mpl3_m47h5}`
+
+NOTE: After completing the challenge, I went to do a bit more research into the affine cipher and found that my code to reverse the affine cipher could be greatly simplified: 
+
+**Original Code**:
+```python
+for k in range(len(ct)):
+    if ct[k] in mappings.keys():
+        decrypted.append(mappings[ct[k]])
+    else:
+        for i in range(mod):
+            enc = (a*i+ b) % mod
+            if enc == ct[k]:
+                mappings[ct[k]] = i
+                decrypted.append(i)
+                break
+```
+
+**Revised Code**:
+```python
+# Based on formula : pt = inverse(a) * (ct - b) % mod
+from Crypto.Util.number import inverse
+for k in range(len(ct)):
+    decrypted.append((inverse(a,mod)*(ct[k] -b)) % mod)
+```
