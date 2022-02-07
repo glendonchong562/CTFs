@@ -8,7 +8,7 @@ This challenge was great because I've learnt about [waybackmachine](https://arch
 
 ![cyberange io_history](https://user-images.githubusercontent.com/71312079/152742347-ff467a64-dadc-4019-9d26-849c4ee3afcd.png)
 
- Clicking the earliest available screenshot on **2 Nov 2017**, I scroll to the botton and see the website theme's artist:
+ Clicking the earliest available screenshot on **2 Nov 2017**, I scroll to the bottom and see the website theme's artist:
 
 ![artist](https://user-images.githubusercontent.com/71312079/152742334-9662c285-d006-471c-8284-ff1f55996d86.png)
 
@@ -20,7 +20,7 @@ FLAG: `flag{andrea_galanti}`
 
 ## Challenge Description: Some answers are hidden in the past, Find the phone number of the person in Wayback 1
 
-From the previous challenge and screenshot, I noted that *Andrea Galanti* is hyperlinked and click on it, where I am brought to his personal [website](http://www.andreagalanti.it/), where a 2017 screenshot was also available.
+From the previous challenge and screenshot, I noted that *Andrea Galanti* was hyperlinked and clicked on it, where I am brought to his personal [website](http://www.andreagalanti.it/) from 2017.
 
 I translate the page from Italian to English and find a link to his personal information. Clicking that link brings me to this page with his phone number:
 
@@ -36,7 +36,7 @@ This challenge was less straightforward, I continued clicking around on Andrea's
 
 After hitting several dead ends with browsing to his social media accounts (*Linkedin/Instagram/Twitter*), I eventually decided to go to Skype itself and check if I could find him there (His skype id is unlikely to change after 4 years right?)
 
-As it turns out, Andrea Galanti is a pretty popular Italian name and I found many hits on Skype. After adding the additional word `italy` (as if that was needed?), I found a profile picture that looked somewhat like him and it turned out to be the correct skype ID.
+As it turns out, Andrea Galanti is a pretty popular Italian name and I found many hits on Skype. After adding the additional word `italy` (as if that was needed?), I found a profile picture that looked somewhat like him, in addition to *91* in the skype ID which was the year that Andrea was born, based on the previous screenshot. This turned out to be the correct skype ID.
 
 ![Skype](https://user-images.githubusercontent.com/71312079/152742350-c27ebd64-264a-439d-8056-0bc6684bded0.png)
 
