@@ -13,7 +13,7 @@ I am given a memory dump simply called **memory.raw**. My DFIR instincts prompte
 5. Yara
 6. EVTxtract 
 
-I chose a triage type of *1* as I felt like only the first 3 options would be relevant for this challenge. After obtaining the results in ~9 minutes, I checked the usual suspects:
+I chose a triage type of *1* as I felt like only the first 3 options would be relevant for this challenge (4,5,6 are generally for finding malicious activities). After obtaining the results in ~9 minutes, I checked the usual suspects:
 * Vol3: **pstree/pslist/cmdline/handles/userassist**
 * Bulk Extractor: **url/domains/enmail/ip/pii**
 * Strings: Tried the low hanging fruit of the flag format `CYBERGRABS{` to no avail. Moved on as there were too many strings and I didn't have a specific one in mind
