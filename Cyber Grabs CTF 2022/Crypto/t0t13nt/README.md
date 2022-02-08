@@ -30,7 +30,7 @@ Having the identity above would greatly simplify our nested loop calculation, bu
 
 I needed a bit of refresher on summation and so I referenced this [link](https://brilliant.org/wiki/sum-of-n-n2-or-n3/) to find the summation of **n** and **n^2**. I sketched it out in the diagram below: 
 
-![summation](https://user-images.githubusercontent.com/71312079/153017890-f294e580-dc39-4509-88c0-600b9c511ce5.jpg)
+![summation](https://user-images.githubusercontent.com/71312079/153031631-a0ad358b-e18b-4087-bb76-8907904c8732.png)
 
 After removing both loops, I can now map each plaintext character to its output and compare it with the given output to obtain our flag.
 
