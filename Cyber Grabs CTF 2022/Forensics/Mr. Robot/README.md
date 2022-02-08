@@ -3,7 +3,7 @@
 ## Challenge Description: Mr. Robot most famous TV show but least people know about it.
 
 
-This challenge involves a wav file called [chall.wav](chall.wav). I don't really do alot of audio stego challenges so I did some google searching and stumbled upong this useful [github](https://github.com/x41x41x41/hackingpotato/blob/master/techniques/stenography.md) page about solving image/sound stego problems. I followed the sequence of steps: 
+This challenge involves a wav file called [chall.wav](chall.wav). I don't really do alot of audio stego challenges so I did some google searching and stumbled upon this useful [github](https://github.com/x41x41x41/hackingpotato/blob/master/techniques/stenography.md) page about solving image/sound stego problems. I followed the sequence of steps: 
 
 1. **Listen to file** - Just a robotic voice saying what I think were some quotes from the TV series 
 2. **strings** - No strings of interest 
@@ -11,7 +11,7 @@ This challenge involves a wav file called [chall.wav](chall.wav). I don't really
 4. **Check Metadata** - Nothing interesting using *exiftool*
 5. **Check LSB** - I was initally unsure how to do this so I skipped this 
 6. **Check for multiple channels** - Single channel based on *exiftool*
-7. **Open in Audacity and check spectogram** - I used *Sonic Visualiser* but did not note anything interesting in the spectrogram 
+7. **Open in Audacity and check spectrogram** - I used *Sonic Visualiser* but did not note anything interesting in the spectrogram 
 8. **Slow down file** - No additional findings 
 9. **Analyze waveform to see if it's binary** - Definitely non binary waveform
 
