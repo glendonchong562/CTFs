@@ -7,8 +7,9 @@ NOTE: There were a couple of CTFs that I attempted but didn't have enough time/c
 
 ### 2022
 1. **Cyber Grabs CTF**: 6 - 7 Feb
-2. **Knight CTF**: 20 - 21 Jan
-3. **TetCTF**: 1 - 2 Jan
+2. **Dice CTF**: 4 - 6 Feb
+3. **Knight CTF**: 20 - 21 Jan
+4. **TetCTF**: 1 - 2 Jan
 
 ### 2021
 
