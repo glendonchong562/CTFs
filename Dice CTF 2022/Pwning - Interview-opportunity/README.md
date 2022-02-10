@@ -13,7 +13,7 @@ The main difference this time was that I decided to use the *ROP* object from pw
 I first check the security permissions and see that **NX** is enabled, meaning that is likely a *return-to-libc* attack.
 ![checksec](https://user-images.githubusercontent.com/71312079/153183454-8fcd07ff-d0a2-4f54-9957-1cf9f459ebf0.png)
 
-I then proceed to run the file and am greeted with the following prompt, to which I key in a string of 'a's and see the *segementation fault*
+I then proceed to run the file and am greeted with the following prompt, to which I key in a string of 'a's and see the *segmentation fault*
 
 ![segfault](https://user-images.githubusercontent.com/71312079/153183475-5dbbb084-3454-45a7-b450-bdd920646d84.png)
 
