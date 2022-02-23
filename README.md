@@ -6,10 +6,12 @@ A compilation of CTF writeups, mostly in the *forensics* and *crypto* categories
 NOTE: There were a couple of CTFs that I attempted but didn't have enough time/couldn't solve any of the challenges so they are not listed here.
 
 ### 2022
-1. **Cyber Grabs CTF**: 6 - 7 Feb
-2. **Dice CTF**: 4 - 6 Feb
-3. **Knight CTF**: 20 - 21 Jan
-4. **TetCTF**: 1 - 2 Jan
+1. **VU Cybertron**: 17 - 18 Feb
+2. **DefCamp CTF**: 11 - 13 Feb
+3. **Cyber Grabs CTF**: 6 - 7 Feb
+4. **Dice CTF**: 4 - 6 Feb
+5. **Knight CTF**: 20 - 21 Jan
+6. **TetCTF**: 1 - 2 Jan
 
 ### 2021
 
