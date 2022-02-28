@@ -6,6 +6,8 @@ A compilation of CTF writeups, mostly in the *forensics* and *crypto* categories
 NOTE: There were a couple of CTFs that I attempted but didn't have enough time/couldn't solve any of the challenges so they are not listed here.
 
 ### 2022
+
+1. **MHSCTF**: 18 - 25 Feb
 1. **VU Cybertron**: 17 - 18 Feb
 2. **DefCamp CTF**: 11 - 13 Feb
 3. **Cyber Grabs CTF**: 6 - 7 Feb
