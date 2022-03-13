@@ -7,13 +7,14 @@ NOTE: There were a couple of CTFs that I attempted but didn't have enough time/c
 
 ### 2022
 
-1. **MHSCTF**: 18 - 25 Feb
-1. **VU Cybertron**: 17 - 18 Feb
-2. **DefCamp CTF**: 11 - 13 Feb
-3. **Cyber Grabs CTF**: 6 - 7 Feb
-4. **Dice CTF**: 4 - 6 Feb
-5. **Knight CTF**: 20 - 21 Jan
-6. **TetCTF**: 1 - 2 Jan
+1. **CTFSG**: 12 - 13 Mar
+2. **MHSCTF**: 18 - 25 Feb
+3. **VU Cybertron**: 17 - 18 Feb
+4. **DefCamp CTF**: 11 - 13 Feb
+5. **Cyber Grabs CTF**: 6 - 7 Feb
+6. **Dice CTF**: 4 - 6 Feb
+7. **Knight CTF**: 20 - 21 Jan
+8. **TetCTF**: 1 - 2 Jan
 
 ### 2021
 
