@@ -2,7 +2,7 @@
  
 ## Challenge Description: What's ROP?
 
-From the name of this challenge, it was pretty clear that ROP was needed to solve the challenge. Interestingly, the binary supplied was **32 bit** instead of **64 bit** in challenges that I've done before. Stitching the gadgets would be slightly different since 32 bit programs store their function parameters on the stack instead of the registers for 64 bit.
+From the name of this challenge, it was pretty clear that ROP was needed to solve the challenge. Interestingly, the binary supplied was **32 bit** instead of **64 bit** in challenges that I've done before. Stitching the gadgets would be slightly different since 32 bit programs generally store their function parameters on the stack instead of the registers for 64 bit.
 
 To solve the challenge, I performed the following: 
 * Determined the offset of **28** from GEF
