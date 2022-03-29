@@ -10,7 +10,7 @@ To solve the challenge, I performed the following:
 * Used **--ropchain** from **ROPGgadget** to generated the payload 
 * Made the following adjustments for a payload originally meant for *python2*
   * Imported python3's **pwn** library instead of python2's **struct**
-  * Replaced **pack('<I', 0x080583c9)** with **p32(0x080583c9)**
+  * Replaced **pack('<I', <opcode>)** with **p32(<opcode>)**
 
 The final payload is as follows: 
   
