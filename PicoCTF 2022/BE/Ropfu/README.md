@@ -6,7 +6,7 @@ From the name of this challenge, it was pretty clear that ROP was needed to solv
 
 To solve the challenge, I performed the following: 
 * Determined the offset of **28** from GEF
-* Referred to this article on using **ROPGgadget**
+* Referred to this [article](http://shell-storm.org/blog/Return-Oriented-Programming-and-ROPgadget-tool/) on using **ROPGgadget**
 * Used **--ropchain** from **ROPGgadget** to generated the payload 
 * Made the following adjustments for a payload originally meant for *python2*
   * Imported python3's **pwn** library instead of python2's **struct**
