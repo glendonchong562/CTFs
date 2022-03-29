@@ -7,6 +7,8 @@
  * Different from 32-bit where you can see the overwritten EIP
  * Thus need to look at RSP instead of RIP 
 
+3. Use **ROPGadget** for auto payload generation (Useful esp for 32 bit)
+
 ## GEF 
 
 1. Finding offset:
