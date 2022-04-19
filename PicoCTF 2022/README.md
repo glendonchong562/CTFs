@@ -6,7 +6,7 @@
 * Nice that Pico also archives all their past year CTF questions for practice purposes
 * Learning Points:
   * Crypto
-    * 
+    * The meaning of smooth primes and using Pollard's p − 1 algorithm for smooth primes (**Very Smooth**)
   * Reversing
     * 
   * Web
