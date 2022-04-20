@@ -8,9 +8,7 @@
   * Crypto
     * The meaning of smooth primes and using Pollard's p − 1 algorithm for smooth primes (**Very Smooth**)
   * Reversing
-    * 
-  * Web
-    * 
+    * Using Radare2 for debugging (**Keygenme**) 
   * BE
     * Adding padding for the return pointer for 32-bit programs during buffer overflow (**Buffer Overflow 3**)
     * Format string vulnerability using known flag plaintext to determine offset (**Flag Leak**)
