@@ -61,5 +61,5 @@ NOTE: After solving the challenge, I realised that python's **primefac** library
 ```python
 import gmpy2
 import primefac 
-q = primefac.pollard_pm1(n,16))
+q = primefac.pollard_pm1(n)
 ```

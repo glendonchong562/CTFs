@@ -1,10 +1,11 @@
 # Ropfu
- 
+
 ## Challenge Description: What's ROP?
 
 From the name of this challenge, it was pretty clear that ROP was needed to solve the challenge. Interestingly, the binary supplied was **32 bit** instead of **64 bit** in challenges that I've done before. Stitching the gadgets would be slightly different since 32 bit programs generally store their function parameters on the stack instead of the registers for 64 bit.
 
 To solve the challenge, I performed the following: 
+
 * Determined the offset of **28** from GEF
 * Referred to this [article](http://shell-storm.org/blog/Return-Oriented-Programming-and-ROPgadget-tool/) on using **ROPGgadget**
 * Used **--ropchain** from **ROPGgadget** to generated the payload 
@@ -13,7 +14,7 @@ To solve the challenge, I performed the following:
   * Replaced **pack('<I', <opcode>)** with **p32(<opcode>)**
 
 The final payload is as follows: 
-  
+
 ```python
 from pwn import *
 
@@ -70,6 +71,4 @@ r.interactive()
 
 Running the payload above produced the flag.
 
-
 FLAG: `picoCTF{5n47ch_7h3_5h311_c6992ff0}`
-

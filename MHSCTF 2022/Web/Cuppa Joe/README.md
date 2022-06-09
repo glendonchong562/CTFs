@@ -18,4 +18,3 @@ Clicking any of the links (index/flag/message) doesn't seem to do anything and s
 3. Opened image in a new tab to get the flag
 
 ![messagephp](https://user-images.githubusercontent.com/71312079/155993839-9f8ad745-cda3-4f42-b441-81d9a0ecdf08.png)
-

@@ -1,5 +1,5 @@
 # Buffer Overflow 3
- 
+
 ## Challenge Description: Do you think you can bypass the protection and get the flag?
 
 For this challenge, the vulnerable program has a stack canary that needs to be replaced during the buffer overflow. From the [source code](./vuln.c), we can see that a global canary is declared and subsequently copied into a local variable *canary* in the **vuln** function:
@@ -14,18 +14,19 @@ if (memcmp(canary,global_canary,CANARY_SIZE)) {
       printf("***** Stack Smashing Detected ***** : Canary Value Corrupt!\n"); // crash immediately
       exit(-1);
 ```
+
 If the local canary value does not equals to the global value, the program immediately crashes. Since the canary is only 4 bytes long, we should be able to perform a brute force attack on it character by character. We will check for the beginning of the output (**\*\*\*\*\**) for a failed *memcmp* check to determine if our character is right or wrong.
 
 In order to perform the attack, we will need to know the location of the following information:
 
 1. Address of the global canary variable (Using **info variables**)
-![global _canary_add](https://user-images.githubusercontent.com/71312079/160633120-d176175c-88b9-48d5-b5ce-efb300413c20.png)
-   
-2. Buffer location (From disassembling **vuln()**)
-![buffer_loc](https://user-images.githubusercontent.com/71312079/160633098-7416390c-e970-4a9c-ae74-030918319fb1.png)
+   ![global _canary_add](https://user-images.githubusercontent.com/71312079/160633120-d176175c-88b9-48d5-b5ce-efb300413c20.png)
 
-2. Canary offset (From disassembling **vuln()**)
-![canary_offest](https://user-images.githubusercontent.com/71312079/160633107-b8f69d8c-bafc-4aa8-9790-c43633539162.png)
+2. Buffer location (From disassembling **vuln()**)
+   ![buffer_loc](https://user-images.githubusercontent.com/71312079/160633098-7416390c-e970-4a9c-ae74-030918319fb1.png)
+
+3. Canary offset (From disassembling **vuln()**)
+   ![canary_offest](https://user-images.githubusercontent.com/71312079/160633107-b8f69d8c-bafc-4aa8-9790-c43633539162.png)
 
 Looking back at our source code again, we see that we desire to jump to the **win()** function that will print the flag.
 
@@ -44,6 +45,7 @@ void win() {
   fflush(stdout);
 }
 ```
+
 I then crafted the following payload: 
 
 ```python
@@ -62,7 +64,7 @@ while True:
 
         p = process(exe)
         p.sendlineafter(b">", str(offset + num_found).encode('utf-8'))
-        
+
         p.sendlineafter(b">", b"A"* offset + canary + bytes([i]))
         if b"*****" in p.recvline():
             i += 1

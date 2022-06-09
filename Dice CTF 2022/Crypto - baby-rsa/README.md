@@ -8,10 +8,10 @@ This RSA challenge was difficult mainly because **e** was not coprime with **phi
 from Crypto.Util.number import getPrime, bytes_to_long, long_to_bytes
 
 def getAnnoyingPrime(nbits, e):
-	while True:
-		p = getPrime(nbits)
-		if (p-1) % e**2 == 0:
-			return p
+    while True:
+        p = getPrime(nbits)
+        if (p-1) % e**2 == 0:
+            return p
 
 nbits = 128
 e = 17
@@ -28,9 +28,11 @@ print(f"N = {N}")
 print(f"e = {e}")
 print(f"cipher = {cipher}")
 ```
+
 I've only ever had to take the square/cube root of a ciphertext before but to take the 17th root? I searched online and a teammate linked this [writeup](https://blog.soreatu.com/posts/intended-solution-to-crypto-problems-in-nctf-2019/#easyrsa909pt-2solvers) describing a similar CTF challenge.
 
 The author of the writeup suggests that instead of **mod n**, we break the problem down into **mod p** and **mod q**. This is possible because **n** is a weak prime, and I easily factored it using http://factordb.com to **p** and **q**. Using sagemath, we can quickly obtain the roots of:
+
 * m^e - c = 0 mod p 
   * Roots: x1,x2,x3...x17
 * m^e - c = 0 mod q
@@ -51,15 +53,15 @@ n = 5799651121402313414755192757274772707425976280005028536015579373200822778215
 p = 172036442175296373253148927105725488217
 q = 337117592532677714973555912658569668821
 e = 17
-      
+
 P.<a>=PolynomialRing(Zmod(p))
 f=a^e-c
 mps=f.roots()
-      
+
 P.<a>=PolynomialRing(Zmod(q))
 g=a^e-c
 mqs=g.roots()
-      
+
 for mpp in mps:
     x=mpp[0]
     for mqq in mqs:
@@ -69,7 +71,6 @@ for mpp in mps:
       if b'dice{' in pt:
         print(pt)
         break
-
 ```
 
 FLAG: `dice{cado-and-sage-say-hello}`

@@ -1,13 +1,15 @@
 # Unbr34kbl3 (1000 points)
- 
+
 ## Challenge Description: No one can break my rsa encryption, prove me wrong !!
 
 NOTE: This was a difficult challenge and I did not solve it during the competition. It was a good challenge though so I did up a writeup for documentation purposes
+
 * This challenge involves several steps so I split up my solution into parts that address each step 
 * I used sagemath and had to type cast many of my variables as *int* to allow for arthimetic operations so sage doesn't throw me errors
 * Full solution can be found [here](sol.py)
 
 I am given a source python file and an output txt file with the following variables:
+
 * n [Modulus]
 * ip [Inverse of p mod q]
 * iq [Inverse of q mod p]
@@ -24,27 +26,27 @@ assert (x>2 and x%2 == 0)
 assert (isPrime(e1) and isPrime(e2))
 
 def functor():
-	val1 , val2 = 0,0
-	for i in range(x+1):
-		val1 += pow(e1,i)
-	for j in range(3):
-		val2 += pow(e2,j)
-	assert (val1 == val2)
+    val1 , val2 = 0,0
+    for i in range(x+1):
+        val1 += pow(e1,i)
+    for j in range(3):
+        val2 += pow(e2,j)
+    assert (val1 == val2)
 
 def keygen():
-	while True:
-		p,q = [getStrongPrime(1024) for _ in range(2)]
-		if p%4==3 and q%4==3:
-			break
+    while True:
+        p,q = [getStrongPrime(1024) for _ in range(2)]
+        if p%4==3 and q%4==3:
+            break
 
-	r = 2
-	while True:
-		r = r*x
-		if r.bit_length()>1024 and isPrime(r-1):
-			r = r-1
-			break
+    r = 2
+    while True:
+        r = r*x
+        if r.bit_length()>1024 and isPrime(r-1):
+            r = r-1
+            break
 
-	return p,q,r
+    return p,q,r
 
 functor()
 p,q,r = keygen()
@@ -55,7 +57,9 @@ c1 = pow(bytes_to_long(flag[0:len(flag)//2].encode('utf-8')),e1,n)
 c2 = pow(bytes_to_long(flag[len(flag)//2:].encode('utf-8')),e2,n)
 print(f"n:{n}",f"ip:{ip}",f"iq:{iq}",f"c1:{c1}",f"c2:{c2}",sep="\n")
 ```
+
 After studying the source code, I see a couple of factors at play:
+
 1. This is a *multi-prime* RSA challenge
 2. The assert statement in *functor* appears to give me an equation to solve for **e1**, **e2** and **x**
 3. I can obtain **r** after solving for **x**
@@ -77,6 +81,7 @@ for x in range(2,21,2):
                 break
 # e1,e2,x = 2,5,4
 ```
+
 **Step 2: Obtain r, pq**
 
 After Step 1, it is now trivial to obtain r by using the same code provided to us. **pq** can also easily be found by dividing **n** by **r**.
@@ -91,6 +96,7 @@ while True:
 
 pq = n // r
 ```
+
 **Step 3: p and q**
 
 Step 3 was considerably more challenging given that **pq** could not be easily factored. I know that the solution probably involves the variables **ip** and **iq** and so I do some research and found the following [writeup](https://gist.github.com/hellman/8e1793771cf240740b731c2b082b1ba2) of a similar CTF challenge. Hmm... seems like I need to construct 2 equations with the variables **p** and **q** and solve them together. 
@@ -142,11 +148,12 @@ x8 = n - x4
 
 combined = [x1,x2,x3,x4,x5,x6,x7,x8]
 for pt in combined:
-	m1 = long_to_bytes(pt)
-	if b'cybergrabs{' in m1:
-		print(m1)
-		break
+    m1 = long_to_bytes(pt)
+    if b'cybergrabs{' in m1:
+        print(m1)
+        break
 ```
+
 **Step 5: Finding m2**
 
 Solving m2 was considerably easier since it was classic multi-prime RSA and running the script below yielded m2.
