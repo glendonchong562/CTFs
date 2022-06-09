@@ -7,15 +7,16 @@ NOTE: There were a couple of CTFs that I attempted but didn't have enough time/c
 
 ### 2022
 
-1. **PicoCTF**: 15 - 29 Mar
-2. **CTFSG**: 12 - 13 Mar
-3. **MHSCTF**: 18 - 25 Feb
-4. **VU Cybertron**: 17 - 18 Feb
-5. **DefCamp CTF**: 11 - 13 Feb
-6. **Cyber Grabs CTF**: 6 - 7 Feb
-7. **Dice CTF**: 4 - 6 Feb
-8. **Knight CTF**: 20 - 21 Jan
-9. **TetCTF**: 1 - 2 Jan
+1. **HTB CYBER APOCALYPSE**: 14 -20 May
+2. **PicoCTF**: 15 - 29 Mar
+3. **CTFSG**: 12 - 13 Mar
+4. **MHSCTF**: 18 - 25 Feb
+5. **VU Cybertron**: 17 - 18 Feb
+6. **DefCamp CTF**: 11 - 13 Feb
+7. **Cyber Grabs CTF**: 6 - 7 Feb
+8. **Dice CTF**: 4 - 6 Feb
+9. **Knight CTF**: 20 - 21 Jan
+10. **TetCTF**: 1 - 2 Jan
 
 ### 2021
 
