@@ -8,23 +8,23 @@ NOTE: There were a couple of CTFs that I attempted but didn't have enough time/c
 
 ### 2022
 
-1. [**CSIT TISC**](./"TISC 2022"): 26 Aug - 11 Sep
-2. [**HTB CYBER APOCALYPSE**](./"HTB CYBERAPOCALYPSE 2022"): 14 -20 May
-3. [**PicoCTF**](./"PicoCTF 2022"): 15 - 29 Mar
-4. [**CTFSG**](./"CTFSG 2022"): 12 - 13 Mar
-5. [**Pragyan CTF**](./"Pragyan CTF 2022"): 5 - 6 Mar
-6. [**MHSCTF**](./MHSCTF 2022): 18 - 25 Feb
-7. [**VU Cybertron**](./"VU Cybertron 2022"): 17 - 18 Feb
-8. [**DefCamp CTF**](./"DefCamp CTF 2022"): 11 - 13 Feb
-9. [**Cyber Grabs CTF**](./"Cyber Grabs CTF 2022"): 6 - 7 Feb
-10. [**Dice CTF**](./"Dice CTF 2022"): 4 - 6 Feb
-11. [**Knight CTF**](./"Knight CTF 2022"): 20 - 21 Jan
+1. [**CSIT TISC**](./TISC%202022): 26 Aug - 11 Sep
+2. [**HTB CYBER APOCALYPSE**](./HTB%20CYBERAPOCALYPSE%202022): 14 -20 May
+3. [**PicoCTF**](./PicoCTF%202022): 15 - 29 Mar
+4. [**CTFSG**](./CTFSG%202022): 12 - 13 Mar
+5. [**Pragyan CTF**](./Pragyan%20CTF%202022): 5 - 6 Mar
+6. [**MHSCTF**](./MHSCTF%202022): 18 - 25 Feb
+7. [**VU Cybertron**](./VU%20Cybertron%202022): 17 - 18 Feb
+8. [**DefCamp CTF**](./DefCamp%20CTF%202022): 11 - 13 Feb
+9. [**Cyber Grabs CTF**](./Cyber%20Grabs%20CTF%202022): 6 - 7 Feb
+10. [**Dice CTF**](./Dice%20CTF%202022): 4 - 6 Feb
+11. [**Knight CTF**](./Knight%20CTF%202022): 20 - 21 Jan
 12. **TetCTF**: 1 - 2 Jan
 
 ### 2021
 
 1. **NITECTF**: 10 - 12 Dec
-2. [**HTB Cyber Santa**](./"HTB Cyber Santa 2021"): 1 - 5 Dec
+2. [**HTB Cyber Santa**](./HTB%20Cyber%20Santa%202021): 1 - 5 Dec
 3. **Damncon**: 24 - 25 Nov
 4. **CSIT TISC**: 29 Oct - 14 Nov
 5. **HTB Cyber Apocalypse**: 19 - 21 Apr

@@ -199,7 +199,7 @@ Clue 1 was found in a file called *broken.pdf*  and contained the following:
 
 The BPB in this case refers to the **BPB (Bios Parameter Block**), which starts at offset 0xB and is used for describing the physical layout of a data storage volume.
 
-<img src="file://D:\Chrome Downloads\CTFs\TISC 2022\Screenshots\2022-08-31-12-30-32-image.png?msec=1661920232094" title="" alt="" width="595">
+<img title="" src="Screenshots/2022-08-31-12-30-32-image.png" alt="" width="595">
 
 Given that the extended BPB started at offset 0x24, those 4 bytes looked incorrect and so I extracted them and sure enough they were the password: **f76635ab**
 
@@ -227,7 +227,7 @@ I'll admit I spent a long time on this clue thinking that it was related to rand
 
 Clue 4 was found at the Last few bytes of \$RAND
 
-<img src="Screenshots/2022-08-31-16-35-03-image.png" title="" alt="" width="586">
+<img src="Screenshots/collision.png" title="" alt="" width="586">
 
 `4. If you need a password, the original reading of the BPB was actually Checked and ReChecked 32 times!`
 
@@ -340,7 +340,7 @@ I first ran the *cat-service* function with the following lambda_function.py and
 
 <u>Contents of the lambda_function.py</u>
 
-![](file://D:\Chrome Downloads\CTFs\TISC 2022\Screenshots\2022-09-20-14-29-12-image.png?msec=1663655352403)
+![](Screenshots\2022-09-20-14-29-12-image.png)
 
 After invoking the function, the following file was downloaded: 
 
