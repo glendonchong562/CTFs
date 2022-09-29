@@ -1,5 +1,7 @@
 # Scoreboard
 
+CSIT 2022 was tough as it was not Jeopardy style and each level would only be revealed after clearing the previous level. This also provided me with the opportunity to work on my weaker categories (Cloud/Web) and I definitely learnt alot from solving the challenges. Looking forward to next year! Final Position: **20/730**
+
 <img src="Screenshots/2022-09-11-22-40-40-image.png" title="" alt="" width="465">
 
 https://www.csit.gov.sg/events/tisc/tisc-2022-summary
@@ -19,6 +21,7 @@ The aim of the game was to slay the dragon. There were a total of 3 levels:
 | 3     | Dragon | 50     | 100 |
 
 I started a local instance and was greeted by the following screen upon launching the app:
+
 <img title="" src="Screenshots/2022-09-20-22-21-27-image.png" alt="" width="300"> 
 
 1. Starts a boss battle where the player and boss take turns attacking each other 
