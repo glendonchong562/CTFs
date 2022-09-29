@@ -6,7 +6,7 @@ This challenge involves a MITM attack with the Diffie-Hellman protocol. Looking 
 
 - Encrypted Sequence in Hex
 
-<img src="Images/2022-05-16-15-00-33-image.png" title="" alt="" width="565">
+<img title="" src="Crypto_Writeups/674855ec1f99d731a7ef372ab8e96eabdada71c4.png" alt="" width="565">
 
 From the highlighted lines, we see that the variable *c* is unknown, and our supplied *M* will be raised to the power of *c* to become the shared_secret. I also note the following:
 
@@ -41,7 +41,7 @@ print(p.recvall())
 
 Running the script yielded the flag:
 
-![](Images/2022-05-16-14-56-01-image.png)
+![](Crypto_Writeups/083b0f5f275789d6e73d327ef61203e146806e3c.png)
 
 `HTB{7h15_p2070c0l_15_pr0tec73d_8y_D@nb3er_c0pyr1gh7_1aws}`
 
@@ -51,7 +51,7 @@ Running the script yielded the flag:
 
 This challenge involves sending a list of approved commands (**whoami/ls/cat secret.txt/pwd**) and receiving the encrypted response from the server. Immediately  **cat secret.txt** stands out and is likely the command that we need to execute. The encryption function is as follows:
 
-![](Images/2022-05-16-20-48-00-image.png) 
+![](Crypto_Writeups/477a5748baf06cb42605ba0c95d47c035f13482c.png) 
 
 Looking at the encryption function, I see that the *secret* is constantly updated based on the <u>current plaintext block</u> and <u>current encrypted block</u>. Since this is known initially only for the first block: "*Command executed: cat secret.txt*", we can use this to calculate h and brute force the plain text for the next block. After this plain text is obtained, we can just repeat till the entire message is decoded.
 
@@ -88,7 +88,7 @@ print(pt)
 
 Running the code above produced the flag:
 
-![](Images/2022-05-16-20-39-56-image.png)
+![](Crypto_Writeups/147467cf9ac1beb335e698ddfbb64cfbc0055fd0.png)
 
 `HTB{b451c_b10ck_c1ph3r_15_w34k!!!}`
 
@@ -140,7 +140,7 @@ while True:
 
 After around 10 minutes of running the script above, the portion of the flag after **HTB{** is obtained:
 
-![](Images/2022-05-17-00-34-08-image.png)
+![](Crypto_Writeups/0754f20a6ebe5c4fa0575b13fe1ea4ef1504a427.png)
 
 `HTB{345y_53cr37_r3c0v3ry}`
 
@@ -182,7 +182,7 @@ with open('encrypted_messages.txt', 'r') as f:
 orig_index = [derived_key.index(i + 1) for i in range(width)]
 for position, number in enumerate(orig_index):
     mapping[number] = position
-        
+
 for e in encrypted_messages:
     length = len(e) // width
     unflattened_unreversed_blocks = [e[i:i + length][::-1] for i in range(0, len(e), length)]
@@ -192,6 +192,6 @@ for e in encrypted_messages:
     print(pt)
 ```
 
-![](Images/2022-05-17-12-44-30-image.png)
+![](Crypto_Writeups/80abde2715d0a7c3fcb21fc9d2fe547e02c38c4f.png)
 
 `HTB{THELCGISVULNERABLEWENEEDTOCHANGEIT}`
