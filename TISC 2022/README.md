@@ -1,7 +1,5 @@
 # Scoreboard
 
-CSIT 2022 was tough as it was not Jeopardy style and each level would only be revealed after clearing the previous level. This also provided me with the opportunity to work on my weaker categories (Cloud/Web) and I definitely learnt alot from solving the challenges. Looking forward to next year! Final Position: **20/730**
-
 <img src="Screenshots/2022-09-11-22-40-40-image.png" title="" alt="" width="465">
 
 https://www.csit.gov.sg/events/tisc/tisc-2022-summary
@@ -21,7 +19,6 @@ The aim of the game was to slay the dragon. There were a total of 3 levels:
 | 3     | Dragon | 50     | 100 |
 
 I started a local instance and was greeted by the following screen upon launching the app:
-
 <img title="" src="Screenshots/2022-09-20-22-21-27-image.png" alt="" width="300"> 
 
 1. Starts a boss battle where the player and boss take turns attacking each other 
@@ -230,7 +227,7 @@ I'll admit I spent a long time on this clue thinking that it was related to rand
 
 Clue 4 was found at the Last few bytes of \$RAND
 
-<img src="Screenshots/collision.png" title="" alt="" width="586">
+![](README/bc6fa4437b91523aae00e482ca224c5456463516.png)
 
 `4. If you need a password, the original reading of the BPB was actually Checked and ReChecked 32 times!`
 
@@ -240,7 +237,7 @@ Looking only at the caps, the algorithm was **CRC32**.
 
 After knowing the password of **f76635ab** and the **TrueCrypt** encryption software, I extracted the remaining bytes from \$RAND and used **TrueCrypt** to mount the container , revealing a file called **outer.jpg**:
 
-<img src="Screenshots/2022-08-31-23-31-07-image.png" title="" alt="" width="360">
+<img src="Screenshots/collision.png" title="" alt="" width="586">
 
 Guessing that the password was some permutation of the word 'collision' and that the algorithm used was **CRC32**, I ran hashcat in brute-force mode with several masks for common character substitutions for the middle characters (o,i,l,s).
 
@@ -343,7 +340,7 @@ I first ran the *cat-service* function with the following lambda_function.py and
 
 <u>Contents of the lambda_function.py</u>
 
-![](Screenshots\2022-09-20-14-29-12-image.png)
+![](Screenshots/2022-09-20-14-29-12-image.png)
 
 After invoking the function, the following file was downloaded: 
 
@@ -399,7 +396,7 @@ def lambda_handler(event, context):
 
 2. *SubnetID* was taken from describing the subnets:
 
-<img src="Screenshots/2022-09-20-14-50-30-image.png" title="" alt="" width="176">
+<img title="" src="Screenshots/2022-09-20-14-50-30-image.png" alt="" width="249">
 
 3. *IAMInstanceProfile* was taken from listing the available instance profiles
 
