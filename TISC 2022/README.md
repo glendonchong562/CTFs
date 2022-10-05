@@ -19,7 +19,11 @@ The aim of the game was to slay the dragon. There were a total of 3 levels:
 | 3     | Dragon | 50     | 100 |
 
 I started a local instance and was greeted by the following screen upon launching the app:
+
+
 <img title="" src="Screenshots/2022-09-20-22-21-27-image.png" alt="" width="300"> 
+
+
 
 1. Starts a boss battle where the player and boss take turns attacking each other 
    
@@ -340,7 +344,7 @@ I first ran the *cat-service* function with the following lambda_function.py and
 
 <u>Contents of the lambda_function.py</u>
 
-![](Screenshots/2022-09-20-14-29-12-image.png)
+<img src="Screenshots/2022-09-20-14-29-12-image.png" title="" alt="" width="456">
 
 After invoking the function, the following file was downloaded: 
 
