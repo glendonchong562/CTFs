@@ -1,8 +1,14 @@
 # Scoreboard
 
+TISC2022 was difficult for me since the earlier challenges were in categories that I was not too familiar with (Pwning/Web/Cloud). Nonetheless, it was a tough but enjoyable 16 days and I definitely learnt alot through the process. 
+
+Final Position: **20/730**
+
 <img src="Screenshots/2022-09-11-22-40-40-image.png" title="" alt="" width="465">
 
 https://www.csit.gov.sg/events/tisc/tisc-2022-summary
+
+---
 
 # Stage 1: Slay the Dragon
 
@@ -20,10 +26,7 @@ The aim of the game was to slay the dragon. There were a total of 3 levels:
 
 I started a local instance and was greeted by the following screen upon launching the app:
 
-
 <img title="" src="Screenshots/2022-09-20-22-21-27-image.png" alt="" width="300"> 
-
-
 
 1. Starts a boss battle where the player and boss take turns attacking each other 
    
