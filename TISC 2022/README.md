@@ -4,9 +4,17 @@ TISC2022 was difficult for me since the earlier challenges were in categories th
 
 Final Position: **20/730**
 
+https://www.csit.gov.sg/events/tisc/tisc-2022-summary
+
 <img src="Screenshots/2022-09-11-22-40-40-image.png" title="" alt="" width="465">
 
-https://www.csit.gov.sg/events/tisc/tisc-2022-summary
+
+
+- [Stage 1: Slay the Dragon](https://github.com/glendonchong562/CTFs/edit/main/TISC%202022/README.md#stage-1-slay-the-dragon)
+- [Stage 2: Leaky Matrices](https://github.com/glendonchong562/CTFs/edit/main/TISC%202022/README.md#stage-2-leaky-matrices)
+- [Stage 3: PATIENT0](https://github.com/glendonchong562/CTFs/edit/main/TISC%202022/README.md#stage-3-patient0)
+- [Stage 4B: CloudyNekos](https://github.com/glendonchong562/CTFs/edit/main/TISC%202022/README.md#stage-4b-cloudynekos)
+- [Stage 5B: Palindrome's Secret](https://github.com/glendonchong562/CTFs/edit/main/TISC%202022/README.md#stage-5b-palindromes-secret)
 
 ---
 
